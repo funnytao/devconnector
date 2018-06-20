@@ -133,7 +133,7 @@ router.post(
       profileFields.status = req.body.status;
     }
     if (req.body.githubusername) {
-      profileFields.hangithubusernamedle = req.body.githubusername;
+      profileFields.githubusername = req.body.githubusername;
     }
     // Skills - Split into array
     if (req.body.skills !== 'undefined') {
