@@ -1,5 +1,5 @@
-module.exports = {
-  mongoURI:
-    'mongodb://funnytao:Totogpa4.0@ds261450.mlab.com:61450/funnytaoprofiledb',
-  secretOrKey: 'secrect'
-};
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./keys.prod');
+} else {
+  module.exports = require('./keys.dev');
+}
